@@ -78,7 +78,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #005088 0%, #0077b6 100%);
+            background: linear-gradient(135deg, #005088 0%, #0077b6 50%, #00b4d8 100%);
             color: white;
             padding: 150px 20px 100px;
             position: relative;
@@ -92,8 +92,20 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-            opacity: 0.5;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(17, 202, 160, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(0, 180, 216, 0.1) 0%, transparent 50%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .hero-content {
@@ -873,8 +885,9 @@
     </section>
 
     <!-- CTA Final -->
-    <section style="background: linear-gradient(135deg, #005088 0%, #0077b6 100%); color: white;">
-        <div class="container mx-auto max-w-4xl text-center">
+    <section style="background: linear-gradient(135deg, #005088 0%, #0077b6 50%, #00b4d8 100%); color: white; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 30% 50%, rgba(17, 202, 160, 0.15) 0%, transparent 50%), radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 50%); z-index: 0;"></div>
+        <div class="container mx-auto max-w-4xl text-center" style="position: relative; z-index: 1;">
             <h2 class="text-4xl md:text-5xl font-bold mb-6">¡No dejes pasar esta oportunidad!</h2>
             <p class="text-xl md:text-2xl mb-8 opacity-90">
                 Invierte en tu futuro profesional y destaca en tu carrera de Kinesiología
