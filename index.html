@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases Online de Kinesiología - Rodrigo Cuevas | Tutorías Personalizadas</title>
+    <meta name="description" content="Clases 100% personalizadas de Kinesiología online. Kinesiólogo titulado con diplomado UC. Primera clase $15.000. Horarios flexibles. ¡Reserva ahora!">
+    <meta name="keywords" content="clases kinesiología, tutorías kinesiología online, kinesiólogo profesor, clases particulares kinesiología">
+    <meta property="og:title" content="Clases Online de Kinesiología - Rodrigo Cuevas">
+    <meta property="og:description" content="Potencia tu carrera con clases personalizadas de Kinesiología. Kinesiólogo titulado con diplomado UC.">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADI0lEQVRoge2ZT0hUURTGf2/GaSwtyxZBiwgqCKJFEEVBRYtaBEG0iCDatIigRdAiiAoqWkQQRJsIglq0iBZBixYRRIuIFkFBRYsIgqBFBEGLCIKgRYs7k6/xzcy8mXnz3kx+cBfvnnvv+c6999xz7oNUqlSqVKlUqVSqlEoBNAK3gffAT2AF+Al8AG4BjcEsC5YW4DHwB/hL8fgDPAaaArI1ELqAPzjmlYs/QGcgFgdAM/ATd/JuYh5oqbCdgdEAfHInP4f93VigAq5HvAlozLPvM6ABaANOAbuAz8AgsJTznl/AS2Av8CViO0OlGdgIfAL2Ay+Ah8B6YBfQCkzZ/g9Am+3PAW+AM8C6HLl+YAo4AbQDm+x3KjpzI6IW2A/cAV7bsRngMrDJ43wP8Nr6u2P/n6qEvdGyCxizc/XAdeA88A3Hyr9p3Qx5G1AA54HrQJ0d0zy5eo71vyKmDse4b5HN64OsqNPR/sL6l1boWhTchBt7cvdqsWtBGBg5LpuFPm+s7f+v0L+gfD89ipVBANTb+rVi90Kg0daLFbsXBArcKnYvBArcSrF7wfOjRF1oYyJGPxPaMb2KlFmcZ12spzWqlUEAcv+E3Nd1E5usgVFq1xvty41SWx84KHBrqu0PqtpfLkPAYeBRKW+FqSoR0LujY8oM8Bg4Srjk1QUcAp7l+1SJVGr2UtTiLkKuWfu4lX1d5O5hQkdNsaOUe2CtsksUyH3ZV39fi3yWRrxmtdOlXPF1OOl/v9xOZbN+YMBz7ArOg1oEngLHcaSv28/YNTsv/56zfZ+AaaDb+h/Luc4S8KyC32QVgXpgzPodse1pnIn0DNhhf/eLkX8Xp1ifxBG+Zkz76j+H/b4Ah+ycfkNbKb9BWfQB84A+bz7OaGXSSDp0RxVbbL/eUg0iOQ30AdOWNk9Y/62OsEbnb+I45XngBvBOcsCePQA8BK4C+0r5Nsk3wGSRW1rh/wN+AL9w5B0FduS574G3wCvcj2kBaLG/P0C3vfsT+A1Mlie+ZDaBW7buo/IW4Xj4JXs2T4qX6P9PmY+rRCxGZW9OqlSqVKlUqVT/AX8BRiIkdR6oU8cAAAAASUVORK5CYII=">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --color-azul-oscuro: #005088;
+            --color-crema: #f3f0df;
+            --color-acento-teal: #11caa0;
+            --color-texto-cuerpo: #1e293b;
+            --font-header: 'Merriweather', serif;
+            --font-body: 'DM Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-texto-cuerpo);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-header);
+            color: var(--color-azul-oscuro);
+        }
+
+        /* Navegación */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-link {
+            color: var(--color-texto-cuerpo);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: var(--color-crema);
+            color: var(--color-azul-oscuro);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #005088 0%, #0077b6 100%);
+            color: white;
+            padding: 150px 20px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-button {
+            background: var(--color-acento-teal);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(17, 202, 160, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(17, 202, 160, 0.6);
+            background: #0ea885;
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .cta-button-secondary:hover {
+            background: white;
+            color: var(--color-azul-oscuro);
+        }
+
+        /* Secciones */
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--color-acento-teal);
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Tarjetas */
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--color-acento-teal), #0ea885);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Tarjetas de precio */
+        .price-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            border: 3px solid transparent;
+            position: relative;
+            height: 100%;
+        }
+
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0, 80, 136, 0.2);
+            border-color: var(--color-acento-teal);
+        }
+
+        .price-card.featured {
+            background: linear-gradient(135deg, #005088 0%, #0077b6 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .price-card.featured h3,
+        .price-card.featured .price {
+            color: white;
+        }
+
+        .price-card.featured:hover {
+            transform: scale(1.08) translateY(-10px);
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--color-azul-oscuro);
+            font-family: var(--font-header);
+        }
+
+        .price-card.featured .price {
+            color: var(--color-acento-teal);
+        }
+
+        /* Sobre mí */
+        .about-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--color-acento-teal);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid var(--color-acento-teal);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+            transform: translateX(5px);
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-azul-oscuro);
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-azul-oscuro);
+            color: white;
+            padding: 60px 20px 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--color-acento-teal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--color-acento-teal);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 120px 20px 60px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .price {
+                font-size: 2.5rem;
+            }
+
+            nav .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between flex-wrap">
+                <div class="font-bold text-2xl" style="color: var(--color-azul-oscuro);">
+                    <i class="fa-solid fa-user-doctor"></i> Rodrigo Cuevas
+                </div>
+                <div class="flex gap-4 flex-wrap">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                    <a href="#precios" class="nav-link">Precios</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container mx-auto max-w-6xl hero-content text-center">
+            <div class="badge fade-in-up">🎓 Kinesiólogo Titulado</div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 fade-in-up" style="animation-delay: 0.1s;">
+                ¡Potencia tu Carrera!
+            </h1>
+            <p class="text-2xl md:text-3xl mb-4 fade-in-up" style="animation-delay: 0.2s;">
+                Clases Online de Kinesiología 100% Personalizadas
+            </p>
+            <p class="text-xl mb-10 opacity-90 fade-in-up" style="animation-delay: 0.3s;">
+                Razonamiento clínico • Horarios flexibles • Resultados comprobados
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap fade-in-up" style="animation-delay: 0.4s;">
+                <a href="https://wa.me/56979971248?text=Hola%20Rodrigo%2C%20me%20interesa%20reservar%20una%20clase%20de%20prueba%20de%20Kinesiología.%20%C2%BFCuándo%20tienes%20disponibilidad%3F" target="_blank" class="cta-button">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Reserva tu Clase de Prueba
+                </a>
+                <a href="#precios" class="cta-button cta-button-secondary">
+                    Ver Precios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section style="background: var(--color-crema);">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl mb-4">⏰</div>
+                    <h3 class="text-xl font-bold mb-2">Horarios Flexibles</h3>
+                    <p class="text-gray-600">Disponibilidad tarde y noche para adaptarnos a tu agenda</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-2">Garantía de Satisfacción</h3>
+                    <p class="text-gray-600">Primera clase sin compromiso, prueba y convéncete</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-2">Resultados Comprobados</h3>
+                    <p class="text-gray-600">Mejora tus calificaciones con método personalizado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="section-title">¿En qué te puedo ayudar?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Enfoque -->
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Enfoque Principal</h3>
+                    <p class="text-lg mb-4">
+                        Clases <strong>100% personalizadas</strong> y centradas en el <strong>razonamiento clínico</strong>.
+                    </p>
+                    <p class="text-gray-600">
+                        No solo aprenderás teoría, desarrollarás el pensamiento crítico necesario para ser un excelente profesional.
+                    </p>
+                </div>
+
+                <!-- Ideal para -->
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Ideal Para</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl" style="color: var(--color-acento-teal);"></i>
+                            <span class="text-lg">Estudiantes de Kinesiología (1ᵉʳ a 5ᵗᵒ año)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check-circle text-2xl" style="color: var(--color-acento-teal);"></i>
+                            <span class="text-lg">Internos de Kinesiología</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Áreas de Intervención -->
+            <h3 class="text-3xl font-bold text-center mb-8" style="color: var(--color-azul-oscuro);">Áreas Clave de Refuerzo</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card text-center">
+                    <div class="text-5xl mb-4">🔬</div>
+                    <h4 class="text-xl font-bold mb-2">Intervención Fisiología</h4>
+                    <p class="text-gray-600">Fundamentos y aplicación clínica</p>
+                </div>
+                <div class="card text-center">
+                    <div class="text-5xl mb-4">💪</div>
+                    <h4 class="text-xl font-bold mb-2">Intervención Músculo Esquelético</h4>
+                    <p class="text-gray-600">Evaluación y tratamiento</p>
+                </div>
+                <div class="card text-center">
+                    <div class="text-5xl mb-4">🧠</div>
+                    <h4 class="text-xl font-bold mb-2">Intervención Neurología</h4>
+                    <p class="text-gray-600">Patologías y rehabilitación</p>
+                </div>
+                <div class="card text-center">
+                    <div class="text-5xl mb-4">🫁</div>
+                    <h4 class="text-xl font-bold mb-2">Intervención Respiratorio</h4>
+                    <p class="text-gray-600">Cuidados críticos y básicos</p>
+                </div>
+            </div>
+
+            <!-- Plataformas -->
+            <div class="mt-12 text-center">
+                <h3 class="text-2xl font-bold mb-6" style="color: var(--color-azul-oscuro);">
+                    <i class="fa-solid fa-laptop mr-2"></i> Plataformas Disponibles
+                </h3>
+                <div class="flex justify-center gap-8 flex-wrap">
+                    <div class="flex items-center gap-2 text-lg">
+                        <i class="fa-brands fa-microsoft text-3xl" style="color: var(--color-acento-teal);"></i>
+                        <span>Microsoft Teams</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-lg">
+                        <i class="fa-solid fa-video text-3xl" style="color: var(--color-acento-teal);"></i>
+                        <span>Zoom</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-lg">
+                        <i class="fa-brands fa-discord text-3xl" style="color: var(--color-acento-teal);"></i>
+                        <span>Discord</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-lg">
+                        <i class="fa-solid fa-users text-3xl" style="color: var(--color-acento-teal);"></i>
+                        <span>Google Meet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" style="background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="section-title">Tu Tutor</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <img src="imagenes/rodrigo.jpg" alt="Rodrigo Esteban Cuevas Acuña" class="about-img">
+                <div>
+                    <h3 class="text-3xl font-bold mb-4">Rodrigo Esteban Cuevas Acuña</h3>
+                    <div class="space-y-3 mb-6">
+                        <p class="flex items-center gap-3 text-lg">
+                            <i class="fa-solid fa-graduation-cap text-2xl" style="color: var(--color-acento-teal);"></i>
+                            <span><strong>Kinesiólogo Titulado</strong></span>
+                        </p>
+                        <p class="flex items-start gap-3 text-lg">
+                            <i class="fa-solid fa-award text-2xl" style="color: var(--color-acento-teal);"></i>
+                            <span><strong>Diplomado:</strong> Kinesioterapia en Cuidados del Paciente Crítico<br>(Pontificia Universidad Católica)</span>
+                        </p>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Con experiencia en docencia y práctica clínica, mi objetivo es ayudarte a desarrollar las habilidades necesarias para destacar en tu carrera. Utilizo metodologías centradas en el razonamiento clínico para que no solo memorices, sino que comprendas y apliques los conocimientos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="precios">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="section-title">Inversión en tu Futuro</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Clase de Prueba -->
+                <div class="price-card">
+                    <div class="text-center mb-6">
+                        <div class="text-5xl mb-4">🎯</div>
+                        <h3 class="text-2xl font-bold mb-4">Clase de Prueba</h3>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="price">$15.000</div>
+                        <p class="text-gray-600 text-lg">/hora</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Sin compromiso</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Conoce la metodología</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Evaluación personalizada</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/56979971248?text=Hola%20Rodrigo%2C%20me%20interesa%20la%20clase%20de%20prueba." target="_blank" class="cta-button w-full justify-center">
+                        Reservar Ahora
+                    </a>
+                </div>
+
+                <!-- Clases Individuales (Featured) -->
+                <div class="price-card featured">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="badge" style="background: var(--color-acento-teal);">✨ Más Popular</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="text-5xl mb-4">⭐</div>
+                        <h3 class="text-2xl font-bold mb-4">Clases Individuales</h3>
+                    </div>
+                    <div class="text-center mb-2">
+                        <div class="price">$22.000</div>
+                        <p class="text-gray-300 text-lg mb-4">/hora - Materias básicas</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="price">$25.000</div>
+                        <p class="text-gray-300 text-lg">/hora - Materias clínicas o críticas</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>100% personalizado</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Horarios flexibles</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Material de apoyo incluido</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Seguimiento continuo</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/56979971248?text=Hola%20Rodrigo%2C%20me%20interesan%20las%20clases%20individuales." target="_blank" class="cta-button w-full justify-center">
+                        Empezar Ahora
+                    </a>
+                </div>
+
+                <!-- Clases Grupales -->
+                <div class="price-card">
+                    <div class="text-center mb-6">
+                        <div class="text-5xl mb-4">👥</div>
+                        <h3 class="text-2xl font-bold mb-4">Clases Grupales</h3>
+                        <p class="text-gray-600">(2-3 estudiantes)</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="text-lg font-bold mb-2" style="color: var(--color-acento-teal);">Desde</div>
+                        <div class="price">$15.000</div>
+                        <p class="text-gray-600 text-lg mb-2">hasta</p>
+                        <div class="price">$18.000</div>
+                        <p class="text-gray-600 text-lg">/hora por alumno</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Aprende en equipo</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Precio económico</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-check" style="color: var(--color-acento-teal);"></i>
+                            <span>Interacción con compañeros</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/56979971248?text=Hola%20Rodrigo%2C%20me%20interesan%20las%20clases%20grupales." target="_blank" class="cta-button w-full justify-center">
+                        Consultar Disponibilidad
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" style="background: var(--color-crema);">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="space-y-6">
+                <div class="faq-item">
+                    <div class="faq-question">⏰ ¿Cuánto dura cada clase?</div>
+                    <p class="text-gray-700">Cada clase tiene una duración de 1 hora, pero puedo adaptar el tiempo según tus necesidades específicas y objetivos de aprendizaje.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">💳 ¿Qué formas de pago aceptas?</div>
+                    <p class="text-gray-700">Acepto transferencia bancaria, pago por aplicaciones móviles (Mach, Mercado Pago, etc.) y efectivo.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">📅 ¿Cómo reservo una clase?</div>
+                    <p class="text-gray-700">Es muy simple: contáctame por WhatsApp o email, coordinamos un horario que te acomode y ¡listo! Te enviaré el enlace de la plataforma que prefieras.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">📚 ¿Proporcionas material de estudio?</div>
+                    <p class="text-gray-700">Sí, comparto material complementario personalizado, guías de estudio, casos clínicos y recursos adicionales para reforzar lo aprendido en cada sesión.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">🎓 ¿Ayudas con preparación de exámenes?</div>
+                    <p class="text-gray-700">Por supuesto. Puedo ayudarte a preparar pruebas, exámenes finales, presentaciones y trabajos prácticos con enfoque en razonamiento clínico.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">🔄 ¿Puedo cancelar o reprogramar una clase?</div>
+                    <p class="text-gray-700">Sí, solo avísame con anticipación (mínimo 24 horas) y coordinamos un nuevo horario sin problemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section style="background: linear-gradient(135deg, #005088 0%, #0077b6 100%); color: white;">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">¡No dejes pasar esta oportunidad!</h2>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                Invierte en tu futuro profesional y destaca en tu carrera de Kinesiología
+            </p>
+            <a href="https://wa.me/56979971248?text=Hola%20Rodrigo%2C%20me%20interesa%20reservar%20una%20clase%20de%20prueba%20de%20Kinesiología.%20%C2%BFCuándo%20tienes%20disponibilidad%3F" target="_blank" class="cta-button text-xl">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                Agenda tu Clase de Prueba Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-white">Contacto</h3>
+                    <a href="https://wa.me/56979971248?text=Hola%20Rodrigo%2C%20me%20interesa%20conocer%20más%20sobre%20tus%20clases%20de%20Kinesiología." target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold">WhatsApp</div>
+                            <div>+56 9 7997 1248</div>
+                        </div>
+                    </a>
+                    <a href="mailto:recakine96@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold">Email</div>
+                            <div>recakine96@gmail.com</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-white">Horarios</h3>
+                    <div class="space-y-3 text-lg">
+                        <p><i class="fa-solid fa-clock mr-3" style="color: var(--color-acento-teal);"></i> Lunes a Viernes: Tarde y Noche</p>
+                        <p><i class="fa-solid fa-clock mr-3" style="color: var(--color-acento-teal);"></i> Sábados: A coordinar</p>
+                        <p class="text-gray-300 text-base mt-4">* Horarios flexibles según tu disponibilidad</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Rodrigo Cuevas - Clases de Kinesiología. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Efecto scroll en navegación
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
